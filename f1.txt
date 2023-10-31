@@ -1,1 +1,113 @@
 This is practice class. Demo practice is being done.
+
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~
+$ pwd
+/c/Users/Srinith
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~
+$ cd practice
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Srinith/practice/.git/
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ pwd
+/c/Users/Srinith/practice
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git commit -m "First Commit"
+On branch main
+nothing to commit, working tree clean
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git branch -M main
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git remote add origin https://github.com/srinith2710/SE.git
+error: remote origin already exists.
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git push -u origin main
+fatal: protocol 'https' is not supported
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git remote remove origin
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git remote add origin https://github.com/srinith2710/SE.git
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 252 bytes | 252.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/srinith2710/SE.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git branch
+* main
+  new
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git branch new
+fatal: a branch named 'new' already exists
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git checkout
+Your branch is up to date with 'origin/main'.
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git checkout new
+Switched to branch 'new'
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (new)
+$ ls
+f1.txt  f2.txt
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (new)
+$ git add .
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (new)
+$ git commit -m "Commit in new"
+On branch new
+nothing to commit, working tree clean
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (new)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git push -u origin new
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 345 bytes | 345.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'new' on GitHub by visiting:
+remote:      https://github.com/srinith2710/SE/pull/new/new
+remote:
+To https://github.com/srinith2710/SE.git
+ * [new branch]      new -> new
+branch 'new' set up to track 'origin/new'.
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git log
+commit f74b4a4a94f61f20a0bd7377a62e95f831c68cec (HEAD -> main, origin/main)
+Author: srinith2710 <21bd1a051xcsea@gmail.com>
+Date:   Fri Oct 27 10:00:53 2023 +0530
+
+    First
+
+Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
+$ git log --oneline
+f74b4a4 (HEAD -> main, origin/main) First
