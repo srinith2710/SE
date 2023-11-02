@@ -1,4 +1,5 @@
 This is practice class. Demo practice is being done.
+<<<<<<< HEAD
 
 
 Srinith@DESKTOP-2CT6AUS MINGW64 ~
@@ -111,3 +112,6 @@ Date:   Fri Oct 27 10:00:53 2023 +0530
 Srinith@DESKTOP-2CT6AUS MINGW64 ~/practice (main)
 $ git log --oneline
 f74b4a4 (HEAD -> main, origin/main) First
+=======
+This is updation of git.
+>>>>>>> new
